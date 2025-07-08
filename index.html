@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalukya - Digital Marketing & Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #007BFF;
+    color: white;
+  }
+  .card i {
+    color: #007BFF;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .card:hover i,
+  .card:hover h5,
+  .card:hover p {
+    color: white;
+  }
+  .client-logo {
+    max-height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  .client-logo:hover {
+    transform: scale(1.1);
+  }
+  button.btn {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  button.btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #007BFF !important;
+  }
+
+  .client-logo {
+    max-height: 100px;
+    display: block;
+    margin: auto;
+  }
+  .swiper {
+    padding: 20px 0;
+  }
+ .footer {
+      background: linear-gradient(to right, #003176, #003176);
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: white;
+      margin: 0 5px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      background: white;
+      color: #003176;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0 4px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #ffffffcc;
+      color: #379b9b;
+    }
+
+</style>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/rishi.png" alt="Your Startup Logo" height="50">  Chalukya Digitals
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white text-center p-5 fade-in">
+    <div class="container">
+      <h1 class="display-5">Elevate Your Digital Presence with Creative Precision</h1>
+      <p class="lead">We’re a full-service digital marketing startup helping brands grow online through strategic design, social media expertise, and powerful branding solutions.</p>
+      <a href="#contact" class="btn btn-light m-2">Let’s Work Together</a>
+      <a href="#services" class="btn btn-outline-light m-2">See Our Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 fade-in">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="assets/img/socialmediamarketing.jpg" alt="Our Team" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2>Who We Are</h2>
+          <p>We are a creative digital startup built for brands that want to make an impact. Our team brings together expertise in website design, social media strategy, graphic design, branding, and content creation — all designed to help businesses grow online. We combine modern aesthetics with marketing strategy to create work that doesn’t just look good, but performs. Every project we take on is backed by data, driven by creativity, and focused on results. We don’t just deliver services — we deliver growth.</p>
+          <h3>Our Mission</h3>
+          <p>Our mission is to build powerful digital foundations for brands ready to grow. We combine creativity, strategy, and technology to deliver impactful services — from stunning websites and brand identities to effective social media and content that drives engagement. We’re here to make digital simple, scalable, and results-driven for every business aiming to stand out online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-globe fa-3x mb-3"></i>
+            <h5>Website Design</h5>
+            <p>We create stunning, responsive websites tailored to your brand and goals.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-pencil-ruler fa-3x mb-3"></i>
+            <h5>Graphic Design</h5>
+            <p>From logos to promotional material, our creative designs speak for your brand.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-bullhorn fa-3x mb-3"></i>
+            <h5>Social Media Marketing</h5>
+            <p>Boost visibility and engagement with data-driven marketing campaigns.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-chart-line fa-3x mb-3"></i>
+            <h5>Social Media Management</h5>
+            <p>We handle your brand's voice and schedule content that connects with your audience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-lightbulb fa-3x mb-3"></i>
+            <h5>Branding Solutions</h5>
+            <p>Create a consistent brand identity that reflects your business values and goals.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-4 h-100">
+            <i class="fas fa-blog fa-3x mb-3"></i>
+            <h5>Blog Creation</h5>
+            <p>Engage your audience and improve SEO with custom blog content and strategies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-choose-us" class="fade-in" style="background-color: #1b4332; color: #fff;">
+  <div class="container py-5">
+    <h2 class="text-center mb-5">Why Choose Us</h2>
+    <div class="row align-items-start gy-4">
+      <div class="col-md-4 d-flex">
+        <div class="me-3">
+          <i class="fas fa-brain fa-2x text-success"></i>
+        </div>
+        <div>
+          <h5 class="fw-bold text-white">Innovative Thinking</h5>
+          <p class="mb-0 text-light">We blend creativity with strategy to deliver fresh, results-driven solutions.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="me-3">
+          <i class="fas fa-handshake fa-2x text-success"></i>
+        </div>
+        <div>
+          <h5 class="fw-bold text-white">Collaborative Approach</h5>
+          <p class="mb-0 text-light">We partner with you to align every design and strategy with your business goals.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="me-3">
+          <i class="fas fa-chart-bar fa-2x text-success"></i>
+        </div>
+        <div>
+          <h5 class="fw-bold text-white">Performance Focused</h5>
+          <p class="mb-0 text-light">Every campaign and project we build is optimized for growth and measurable success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Clients Section -->
+<section id="clients" class="py-5 fade-in">
+  <div class="container text-center">
+    <h2 class="mb-5">Our Clients</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/img/charaniga.jpg" class="client-logo img-fluid" alt="Client 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/rishi.png" class="client-logo img-fluid" alt="Client 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/care.jpg" class="client-logo img-fluid" alt="Client 3">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/charaniga.jpg" class="client-logo img-fluid" alt="Client 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/rishi.png" class="client-logo img-fluid" alt="Client 5">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/care.jpg" class="client-logo img-fluid" alt="Client 6">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/img/charaniga.jpg" class="client-logo img-fluid" alt="Client 7">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- What Our Clients Say -->
+  <section id="testimonials" class="fade-in">
+  <div class="container">
+    <h2 class="text-center text-black mb-4">What Our Clients Say</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <p class="mb-3">“Your Startup helped us launch our brand with an amazing website and killer social media strategy. Highly recommend!”</p>
+          <h6 class="mb-0 fw-bold">— Sarah M., Brand Manager</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <p class="mb-3">“Their design team brought our ideas to life. We're seeing measurable engagement growth already!”</p>
+          <h6 class="mb-0 fw-bold">— David K., Startup Founder</h6>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 h-100 shadow-sm">
+          <p class="mb-3">“Professional, responsive, and creative. They manage all our socials and branding now.”</p>
+          <h6 class="mb-0 fw-bold">— Anita R., Marketing Director</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-primary text-white py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Let’s Connect</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5><i class="fas fa-envelope"></i> Email</h5>
+          <p>contact@yourstartup.com</p>
+          <h5><i class="fas fa-phone"></i> Phone</h5>
+          <p>+91 98765 43210</p>
+          <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+          <p>123 Startup Street, Hyderabad, India</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">Copyright © 2025 Chalukya digitals</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <span class="me-2">FOLLOW US</span>
+          <span class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    speed: 300, // transition speed in milliseconds (500ms = fast)
+    autoplay: {
+      delay: 1000, // time before next slide (1000ms = 1s)
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+</script>
+
+
+</body>
+
+</html>
